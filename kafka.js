@@ -3,17 +3,17 @@ const fs = require('fs');
 
 // Configurações do TLS
 const tlsOptions = {
-    ca: [fs.readFileSync('U:/BDO/kafka/certificates/Bosch-CA-bundle.cert.pem')],
-    cert: fs.readFileSync('U:/BDO/kafka/certificates/campinas-testing.cert.pem'),
-    key: fs.readFileSync('U:/BDO/kafka/certificates/campinas-testing.key.pem'),
-    passphrase: 'MBjwT7KwdZjavW3b',
+    ca: [fs.readFileSync('U:')],
+    cert: fs.readFileSync('U:'),
+    key: fs.readFileSync('U:'),
+    passphrase: '',
 };
 
 // Configurações de conexão com o Kafka Broker
 const kafkaHosts = [
-    'ca0vm00191.br.bosch.com:9093',
-    'ca0vm00192.br.bosch.com:9093',
-    'ca0vm00193.br.bosch.com:9093',
+    '',
+    '',
+    '',
 ];
 const kafkaClientOptions = {
     kafkaHost: kafkaHosts.join(','),
