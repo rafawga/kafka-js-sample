@@ -1,7 +1,7 @@
 const Kafka = require('kafka-node');
 const fs = require('fs');
 
-// Configurações do TLS
+// Configurações TLS
 const tlsOptions = {
     ca: [fs.readFileSync('U:')],
     cert: fs.readFileSync('U:'),
